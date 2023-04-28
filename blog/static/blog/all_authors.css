@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Dosis&family=Fjalla+One&family=Monoton&family=Montserrat:wght@300&family=Nunito:wght@200;300&display=swap");
+
+body {
+  margin: 0;
+}
+
+.top-nav {
+  background-color: rgb(255, 196, 12);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*   outline: 1px  green; */
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+
+.top-nav hr {
+  color: black;
+  background-color: black;
+  height: 1px;
+  border-width: 0;
+}
+
+.top-nav h1 {
+  font-family: "Crimson Text", serif;
+  /* outline: 1px solid green; */
+  padding-top: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-left: 10%;
+  font-size: 90px;
+}
+
+.top-nav h2 {
+  font-family: "Montserrat", sans-serif;
+  /* outline: 1px solid blue; */
+  margin: 0;
+  line-height: 0.7;
+  padding-left: 10%;
+}
+
+.blog-website {
+  margin-left: 10%;
+  font-size: 30px;
+}
+
+.create {
+  margin-left: 50%;
+}
+
+.register {
+  margin-left: 5%;
+}
+
+.main-heading {
+  font-family: "Crimson Text", serif;
+  font-size: 90px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+
+
+.all-authors {
+  margin-left: 20%;
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  height: 30%;
+  width: 30%;
+  padding: 5px;
+}
+
+.authors {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: 2px solid rgb(255, 196, 12);
+  border-radius: 5px;
+}
+
+.authors img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.authors h1 {
+  margin-top: 3px;
+  font-family: "Fjalla One", sans-serif;
+  margin-bottom: 3px;
+}
+
+.authors p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+}
+
+.authors a {
+  text-decoration: none;
+  margin-top: 0;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Nunito", sans-serif;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  margin: 0;
+  height: 30px;
+  background-color: rgb(255, 196, 12);
+}

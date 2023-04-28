@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Dosis&family=Fjalla+One&family=Monoton&family=Montserrat:wght@300&family=Nunito:wght@200;300&display=swap");
+
+body {
+  margin: 0;
+}
+
+.top-nav {
+  background-color: rgb(255, 196, 12);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*   outline: 1px  green; */
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+
+.top-nav hr {
+  color: black;
+  background-color: black;
+  height: 1px;
+  border-width: 0;
+}
+
+.top-nav h1 {
+  font-family: "Crimson Text", serif;
+  /* outline: 1px solid green; */
+  padding-top: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-left: 10%;
+  font-size: 90px;
+}
+
+.top-nav h2 {
+  font-family: "Montserrat", sans-serif;
+  /* outline: 1px solid blue; */
+  margin: 0;
+  line-height: 0.7;
+  padding-left: 10%;
+}
+
+.blog-website {
+  margin-left: 10%;
+  font-size: 30px;
+}
+
+.create {
+  margin-left: 46%;
+}
+
+.register {
+  margin-left: 3%;
+}
+
+.our-authors{
+  margin-left: 3%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.blogs {
+  /* outline: 1px solid blue; */
+  width: 55%;
+  padding: 5px;
+}
+
+.blogs a{
+  text-decoration: none;
+  color: black;
+}
+
+.blogs hr {
+  color: grey;
+  /* padding-top: 3%; */
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.blog {
+  padding: 3px;
+  /* outline: 1px solid green; */
+}
+
+.image-author-container {
+  /* outline: 1px solid green; */
+  height: 30px;
+  display: flex;
+}
+
+.image-author-container img {
+  object-fit: cover;
+  width: 4%;
+  height: 30px;
+  border-radius: 50%;
+  /* outline: 1px solid rgb(134, 41, 96); */
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  /* float: left; */
+}
+
+.name-time-container {
+  /* outline: 1px solid rgb(54, 39, 109); */
+  width: 100%;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  /* padding-left: 5%; */
+}
+
+.name-time-container h4 {
+  /* outline: 1px solid rgb(119, 42, 52); */
+  padding: 0;
+  padding-left: 1%;
+  padding-top: 0.5%;
+  margin: 0;
+}
+.name-time-container time {
+  /* outline: 1px solid rgb(119, 42, 52); */
+  padding: 0;
+  padding-left: 1%;
+  padding-top: 0.5%;
+  margin: 0;
+}
+
+.title-paragraph-container {
+  display: flex;
+}
+
+.title-paragraph {
+  width: 80%;
+
+  /* outline: 1px solid rgb(33, 57, 33); */
+}
+
+.title-paragraph h4 {
+  margin-top: 1%;
+  margin-bottom: 0%;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.title-paragraph p {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: "Dosis", sans-serif;
+}
+
+.title-image {
+  width: 20%;
+  /* outline: 1px solid rgb(6, 103, 239); */
+}
+.title-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8%;
+}
+
+
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  margin: 0;
+  height: 30px;
+  background-color: rgb(255, 196, 12);
+}

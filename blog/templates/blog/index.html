@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="static/blog/index.css" >
+
+</head>
+<body>
+    <div class="top-nav" >
+        <a href="/" class="blog-website" style="font-family: 'Monoton', cursive;" >Blog Website</a>
+        <a href="{% url "create-post-page"  %}" class="create"> Create a Blog</a>
+        <a href="{% url "register-page" %}" class="register"> Register</a>
+        <a href="{% url "all-authors-page" %}" class="our-authors"> Our Authors</a>
+        <hr>
+        <h1>Stay curious.</h1>
+        <h2>Discover stories, thinking, and expertise from writers on any topic.</h2>
+    </div>
+  
+    
+    <div class="container" >
+        <div class="blogs">
+            {% for post in posts %}
+                <a href="{% url "single-post-page" post.slug %}">
+                    <div class="blog">
+                        <div class="image-author-container">  
+                            <img src="{{ post.author.author_image.url }}" alt="avatar">
+                            <div class="name-time-container">
+                                <h4>{{post.author}}</h4>
+                                <time>{{post.date|date:"d M Y"}}</time>
+                            </div>
+                        </div> 
+                        <div class="title-paragraph-container">
+                            <div class="title-paragraph">
+                                <h4>{{post.title}}</h4>
+                                <p>{{ post.content|truncatechars:250 }}</p>
+                            </div>
+                            <div class="title-image">
+                                <img src="{{ post.blog_image.url }}" alt="avatar" >
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+            {% endfor %} 
+        </div>
+        <div>
+            
+        </div>
+  
+    </div>
+    
+</body>
+<footer></footer>
+</html>
+

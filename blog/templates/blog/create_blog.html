@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Create a Blog</title>
+    <link rel="stylesheet" href="static/blog/create_blog.css" >
+
+</head>
+<body>
+
+    <div class="top-nav" >
+        <a href="/" class="blog-website" style="font-family: 'Monoton', cursive;" >Blog Website</a>
+        <a href="{% url "register-page"  %}" class="create"> Register</a>
+        <a href="{% url "all-authors-page" %}" class="our-authors"> Our Authors</a>
+        <hr>
+        <h1>Stay curious.</h1>
+        <h2>Discover stories, thinking, and expertise from writers on any topic.</h2>
+    </div>
+
+   <form action="{% url "create-post-page" %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="create-blog">
+        
+            <div class="text-label">
+                {{form.title.label_tag}}
+                {{ form.title}}
+            </div>
+            <br>
+            <div class="image-input">
+                {{form.blog_image.label_tag}}
+                {{ form.blog_image}}
+            </div>
+            <br>
+            <div class="text-label">
+                {{form.content.label_tag}}
+            </div>
+
+            <div class="textarea">
+                {{ form.content }}
+            </div>
+            <br>
+            <div class="text-label">
+                {{form.author.label_tag}}
+                {{ form.author}}
+            </div>
+            <br>
+            <button type="submit">Save</button>
+        </div>
+   </form>
+    
+</body>
+<footer></footer>
+</html>

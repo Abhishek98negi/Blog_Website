@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="static/blog/all_authors.css" >
+
+</head>
+<body>
+    <div class="top-nav" >
+        <a href="/" class="blog-website" style="font-family: 'Monoton', cursive;" >Blog Website</a>
+        <a href="{% url "create-post-page"  %}" class="create"> Create a Blog</a>
+        <a href="{% url "register-page" %}" class="register"> Register</a>
+        <hr>
+        <h1>Stay curious.</h1>
+        <h2>Discover stories, thinking, and expertise from writers on any topic.</h2>
+    </div>
+  
+    <h1 class="main-heading">Our Authors</h1>
+
+    <div class="all-authors">
+        {% for author in authors %}
+        <div class="authors">
+            <img src="{{ author.author_image.url }}" alt="avatar" >
+            <h1>{{author.author_name}}</h1>
+            <p>{{author.about_author}}</p>
+            <a href="mailto:{{author.email_address }}">{{author.email_address}}</a>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+    
+</body>
+<footer></footer>
+</html>
