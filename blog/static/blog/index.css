@@ -64,6 +64,7 @@ body {
   flex-direction: row;
   padding-left: 10%;
   padding-top: 5%;
+  margin-bottom: 3%;
 }
 
 .blogs {
@@ -135,8 +136,6 @@ body {
 
 .title-paragraph {
   width: 80%;
-
-  /* outline: 1px solid rgb(33, 57, 33); */
 }
 
 .title-paragraph h4 {
@@ -148,6 +147,8 @@ body {
 .title-paragraph p {
   margin-top: 1%;
   margin-bottom: 1%;
+  margin-right: 3%;
+  font-size: 18px;
   font-family: "Dosis", sans-serif;
 }
 

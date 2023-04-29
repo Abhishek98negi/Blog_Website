@@ -11,6 +11,7 @@ class Author(models.Model):
     author_image = models.ImageField(upload_to="authors_images",null=True)
     about_author = models.TextField(validators=[MinLengthValidator(10)])
     email_address = models.EmailField()
+
     def __str__(self):
         return self.author_name
     

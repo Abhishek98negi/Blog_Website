@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.views import View
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, FormView
+from django.views.generic.detail import DetailView
 from .forms import AuthorForm, PostForm
 from .models import Post,Author
 # Create your views here.
@@ -12,7 +13,6 @@ class StartingPageView(ListView):
     model = Post
     ordering = ["-date"]
     context_object_name = "posts" 
-
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -31,7 +31,7 @@ class AllAuthorView(ListView):
 
 
 class SinglePostView(DetailView):
-    template_name = "blog/single_post.html"
+    template_name = "blog/single_Post.html"
     model = Post
     context_object_name = "post" 
     
