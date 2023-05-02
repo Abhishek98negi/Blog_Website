@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Dosis&family=Fjalla+One&family=Monoton&family=Montserrat:wght@300&family=Nunito:wght@200;300&family=Russo+One&family=Ysabeau&display=swap");
+
+body {
+  margin: 0;
+}
+
+.top-nav {
+  background-color: rgb(255, 196, 12);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+
+.top-nav hr {
+  color: black;
+  background-color: black;
+  height: 1px;
+  border-width: 0;
+}
+
+.top-nav h1 {
+  font-family: "Crimson Text", serif;
+  padding-top: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-left: 10%;
+  font-size: 90px;
+}
+
+.top-nav h2 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  line-height: 0.7;
+  padding-left: 10%;
+}
+
+.blog-website {
+  margin-left: 10%;
+  font-size: 30px;
+}
+
+.create {
+  margin-left: 46%;
+}
+
+.register {
+  margin-left: 3%;
+}
+
+.our-authors {
+  margin-left: 3%;
+}
+
+.container {
+  padding-top: 5%;
+  padding-left: 10%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.blog {
+  width: 70%;
+  height: 90%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 0;
+  border-right: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
+  border-bottom-right-radius: 10px;
+}
+
+.image-author-container {
+  height: 30px;
+  display: flex;
+}
+
+.image-author-container img {
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.name-date-container {
+  width: 100%;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  /* outline: solid brown; */
+}
+
+.name-date-container h4 {
+  padding: 0;
+  padding-left: 1%;
+  padding-top: 0.5%;
+  margin: 0;
+}
+.name-date-container time {
+  padding: 0;
+  padding-left: 1%;
+  padding-top: 0.5%;
+  margin: 0;
+}
+
+.blog-content h1 {
+  font-family: "Russo One", sans-serif;
+}
+
+.blog-content img {
+  width: 100%;
+}
+
+.blog-content p {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.author-comment {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 35%;
+  padding: 10px;
+  position: relative;
+}
+
+.author-box {
+  width: 70%;
+  margin-left: 10%;
+}
+
+.author-box img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.author-box h3 {
+  font-family: "Russo One", sans-serif;
+  color: #484848;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.author-box p {
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #696969;
+  margin-bottom: 2px;
+}
+
+.comment-box{
+  /* outline: solid olive; */
+  position: absolute;
+  bottom: 75px;
+  right: 5px;
+  left: 5px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+}
+
+.comment-box button{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 23px;
+  background-color: rgb(255, 196, 12);
+  border-radius: 3px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.comment-box h2{
+  margin-left: 40px;
+}
+
+
+
+.comment-input{
+  /* outline: solid black; */
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+
+.name-label{
+  margin-left: 40px;
+}
+.name-label input{
+  /* outline: solid blueviolet; */
+  margin-bottom: 5px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 73%;
+}
+
+textarea {
+  max-height:200px ;
+  height: 100px;
+  width: 344px;
+  max-width: 390px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  /* margin */
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.all-comments{
+  /* outline: solid black; */
+  margin-left: 11%;
+  margin-right: 32%;
+  margin-bottom: 45px;
+}
+
+
+.comment{
+  margin:4px;
+  /* outline: solid blue; */
+}
+
+.comment p{
+  margin-top: 3px;
+  margin-left: 7px;
+  font-family: 'Dosis', sans-serif;
+  /* margin-bottom: 4px; */
+  /* margin-bottom: 8px; */
+
+}
+
+
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  margin: 0;
+  height: 30px;
+  background-color: rgb(255, 196, 12);
+}

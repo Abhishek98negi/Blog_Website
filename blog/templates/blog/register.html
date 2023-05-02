@@ -17,6 +17,9 @@
         <h2>Discover stories, thinking, and expertise from writers on any topic.</h2>
     </div>
     
+    
+    <h1 class="heading">Register</h1>
+
    <form action="/register" method="POST" enctype="multipart/form-data" >
         {% csrf_token %}
         
@@ -35,9 +38,7 @@
                 {{author.about_author.label_tag}}
             </div>
 
-            <div class="textarea">
-                {{ author.about_author}}
-            </div>
+            {{ author.about_author}}
             <br>
             <div class="text-label">
                 {{author.email_address.label_tag}}

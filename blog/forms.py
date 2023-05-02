@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post,Author
+from .models import Post,Author,Comment
 
 
 class AuthorForm(forms.ModelForm):
@@ -20,3 +20,13 @@ class PostForm(forms.ModelForm):
         model = Post
         # fields = "__all__"
         exclude = ['slug','date']
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        exclude = ['post','date']
+        labels = {
+            "user_name": "Name",
+            "text" : "Comment"
+        }

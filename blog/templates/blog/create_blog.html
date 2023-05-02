@@ -16,7 +16,7 @@
         <h1>Stay curious.</h1>
         <h2>Discover stories, thinking, and expertise from writers on any topic.</h2>
     </div>
-
+    <h1 class="heading">Create a Blog</h1>
    <form action="{% url "create-post-page" %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         
@@ -35,10 +35,7 @@
             <div class="text-label">
                 {{form.content.label_tag}}
             </div>
-
-            <div class="textarea">
-                {{ form.content }}
-            </div>
+            {{ form.content }}
             <br>
             <div class="text-label">
                 {{form.author.label_tag}}
